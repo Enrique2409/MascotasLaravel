@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\PetsController;
+use App\Http\Controllers\AdoptarController;
 
 Route::get('/', [PrincipalController::class, 'index']);
 
@@ -14,6 +15,11 @@ Route::get('/pets', [PetsController::class, 'index'])->name('pets.index');
 Route::get('/pets/{id}/delete', [PetsController::class, 'destroy'])->name('pets.delete');
 Route::get('/pets/{id}/edit', [PetsController::class, 'edit'])->name('pets.edit');
 
+Route::resource('adopta', AdoptarController::class);
+Route::get('/adopta', [AdoptarController::class, 'index'])->name('adopta.index');
+Route::get('/adopta/{id}/edit', [AdoptarController::class, 'edit'])->name('adopta.edit');
+Route::get('/adopta/{id}/delete', [AdoptarController::class, 'destroy'])->name('adopta.delete');
+
 
 Route::get('/nosotros', function () {
     return view('nosotros');
@@ -23,9 +29,9 @@ Route::get('/mascotas', function () {
     return view('mascotas');
 });
 
-Route::get('/adoptar', function () {
+/*Route::get('/adoptar', function () {
     return view('adopta');
-});
+});*/
 
 Route::get('/citas', function () {
     return view('citas');

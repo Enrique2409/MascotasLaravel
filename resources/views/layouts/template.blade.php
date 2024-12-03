@@ -26,9 +26,6 @@
                             <a class="nav-link" href="/mascotas">Mascotas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/adoptar">Adopta un gatito</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/servicios">servicios</a>
                         </li>
                         <li class="nav-item">
@@ -39,6 +36,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/adopta">Adopta una mascota</a>
+                        </li>
                     </ul>
                 </div>
             </div>
